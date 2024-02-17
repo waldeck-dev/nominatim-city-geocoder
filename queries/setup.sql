@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS location (
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	city TEXT,
+	country TEXT,
+	lat REAL,
+	long REAL
+);
