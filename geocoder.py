@@ -24,5 +24,5 @@ class Geocoder:
                 res = json.loads(raw_res)[0]
                 return float(res["lat"]), float(res["lon"])
 
-            except (KeyError, ValueError):
+            except (KeyError, ValueError, IndexError):
                 return -1.0, -1.0
